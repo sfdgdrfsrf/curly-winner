@@ -1,0 +1,938 @@
+<!-- Saved by UniversalSynSaveInstance (Join to Copy Games) https://discord.gg/wx4ThpAsmw --><roblox version="4"><Meta name="ExplicitAutoJoints">true</Meta><Item class="Tool" referent="0"><Properties><CoordinateFrame name="Grip"><X>0</X><Y>-0.30000001192092896</Y><Z>-0.800000011920929</Z><R00>-1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>-1</R22></CoordinateFrame><bool name="RequiresHandle">false</bool><string name="ToolTip"><![CDATA[pdn's TRANSMORPH RAY GUN
+Turn your enemies into something absolutely random! (2402 morphs loaded) (name change: true) (custom mode: false)]]></string><Content name="TextureId"><url><![CDATA[http://www.roblox.com/asset/?id=28910004]]></url></Content><CoordinateFrame name="ModelMeshCFrame"><X>0</X><Y>0</Y><Z>0</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="ModelMeshSize"><X>0</X><Y>0</Y><Z>0</Z></Vector3><bool name="NeedsPivotMigration">false</bool><float name="ScaleFactor">1</float><OptionalCoordinateFrame name="WorldPivotData"><CFrame><X>-97264.640625</X><Y>-462656.21875</Y><Z>56768.0625</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CFrame></OptionalCoordinateFrame><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[man]]></string><BinaryString name="Tags"></BinaryString></Properties><Item class="Script" referent="1"><Properties><ProtectedString name="Source"><![CDATA[-- Saved by UniversalSynSaveInstance (Join to Copy Games) https://discord.gg/wx4ThpAsmw
+
+-- [FilteringEnabled] Server Scripts are IMPOSSIBLE to save]]></ProtectedString><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[MainServer]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="RemoteEvent" referent="2"><Properties><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[MainRemote]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="LocalScript" referent="3"><Properties><ProtectedString name="Source"><![CDATA[-- Saved by UniversalSynSaveInstance (Join to Copy Games) https://discord.gg/wx4ThpAsmw
+
+-- Decompiler will be improved VERY SOON!
+-- Decompiled with Konstant V2.1, a fast Luau decompiler made in Luau by plusgiant5 (https://discord.gg/brNTY8nX8t)
+-- Decompiled on 2025-08-24 08:24:21
+-- Luau version 6, Types version 3
+-- Time taken: 0.026903 seconds
+
+local ScreenGui_upvr = Instance.new("ScreenGui")
+local Frame_8 = Instance.new("Frame")
+local TextLabel_39_upvr = Instance.new("TextLabel")
+local TextLabel_37_upvr = Instance.new("TextLabel")
+local TextLabel_36_upvr = Instance.new("TextLabel")
+local Frame_6 = Instance.new("Frame")
+local Frame_4_upvr = Instance.new("Frame")
+local TextLabel_32 = Instance.new("TextLabel")
+local TextBox_upvr_4 = Instance.new("TextBox")
+local TextLabel_12_upvr = Instance.new("TextLabel")
+local Frame_9 = Instance.new("Frame")
+local Frame_3_upvr = Instance.new("Frame")
+local TextLabel_22 = Instance.new("TextLabel")
+local TextBox_upvr_2 = Instance.new("TextBox")
+local Frame_upvr = Instance.new("Frame")
+local ScrollingFrame_2 = Instance.new("ScrollingFrame")
+local TextLabel_34 = Instance.new("TextLabel")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local TextLabel_30 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_42 = Instance.new("TextLabel")
+local TextLabel_28 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
+local TextLabel_15 = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_27 = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_38 = Instance.new("TextLabel")
+local TextLabel_25 = Instance.new("TextLabel")
+local TextLabel_24 = Instance.new("TextLabel")
+ScreenGui_upvr.Name = "gui"
+ScreenGui_upvr.Parent = script
+ScreenGui_upvr.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Frame_8.Parent = ScreenGui_upvr
+Frame_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_8.BackgroundTransparency = 0.75
+Frame_8.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Frame_8.BorderSizePixel = 10
+Frame_8.Position = UDim2.new(1, -225, 0.5, -42)
+Frame_8.Size = UDim2.new(0, 225, 0, 85)
+TextLabel_39_upvr.Name = "NM"
+TextLabel_39_upvr.Parent = Frame_8
+TextLabel_39_upvr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_39_upvr.BackgroundTransparency = 1
+TextLabel_39_upvr.BorderSizePixel = 0
+TextLabel_39_upvr.Position = UDim2.new(0.5, -100, 0, 0)
+TextLabel_39_upvr.Size = UDim2.new(0, 200, 0, 29)
+TextLabel_39_upvr.Font = Enum.Font.SourceSansLight
+TextLabel_39_upvr.Text = "Transmorph Ray Gun"
+TextLabel_39_upvr.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_39_upvr.TextSize = 23
+TextLabel_39_upvr.TextWrapped = true
+TextLabel_37_upvr.Name = "MM"
+TextLabel_37_upvr.Parent = Frame_8
+TextLabel_37_upvr.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_37_upvr.BackgroundTransparency = 0.7
+TextLabel_37_upvr.BorderSizePixel = 0
+TextLabel_37_upvr.Position = UDim2.new(0.5, -100, 0.5, -14)
+TextLabel_37_upvr.Size = UDim2.new(0, 200, 0, 29)
+TextLabel_37_upvr.Font = Enum.Font.SciFi
+TextLabel_37_upvr.Text = "MORPH: [UNKNOWN]"
+TextLabel_37_upvr.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_37_upvr.TextSize = 15
+TextLabel_36_upvr.Name = "HI"
+TextLabel_36_upvr.Parent = Frame_8
+TextLabel_36_upvr.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_36_upvr.BackgroundTransparency = 1
+TextLabel_36_upvr.BorderSizePixel = 0
+TextLabel_36_upvr.Position = UDim2.new(0.5, -100, 1, -29)
+TextLabel_36_upvr.Size = UDim2.new(0, 200, 0, 29)
+TextLabel_36_upvr.Font = Enum.Font.SourceSansLight
+TextLabel_36_upvr.Text = "Press \"H\" to show the Keybind"
+TextLabel_36_upvr.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_36_upvr.TextScaled = true
+TextLabel_36_upvr.TextSize = 15
+TextLabel_36_upvr.TextWrapped = true
+Frame_6.Name = "Clip"
+Frame_6.Parent = Frame_8
+Frame_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_6.BackgroundTransparency = 1
+Frame_6.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Frame_6.ClipsDescendants = true
+Frame_6.Position = UDim2.new(0, -10, 1, 10)
+Frame_6.Size = UDim2.new(1, 20, 1.29999995, 5)
+Frame_4_upvr.Parent = Frame_6
+Frame_4_upvr.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4_upvr.BackgroundTransparency = 0.75
+Frame_4_upvr.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Frame_4_upvr.BorderSizePixel = 10
+Frame_4_upvr.Position = UDim2.new(0, 10, -1, 0)
+Frame_4_upvr.Size = UDim2.new(1, -20, 1, -10)
+TextLabel_32.Name = "HI"
+TextLabel_32.Parent = Frame_4_upvr
+TextLabel_32.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_32.BackgroundTransparency = 1
+TextLabel_32.BorderSizePixel = 0
+TextLabel_32.Position = UDim2.new(0.5, -100, 0, 0)
+TextLabel_32.Size = UDim2.new(0, 200, 0, 25)
+TextLabel_32.Font = Enum.Font.SourceSansLight
+TextLabel_32.Text = "UserID toggled."
+TextLabel_32.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_32.TextSize = 12
+TextBox_upvr_4.Name = "ID"
+TextBox_upvr_4.Parent = Frame_4_upvr
+TextBox_upvr_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_upvr_4.BackgroundTransparency = 0.7
+TextBox_upvr_4.Position = UDim2.new(0.5, -100, 0.5, -25)
+TextBox_upvr_4.Size = UDim2.new(0, 200, 0, 29)
+TextBox_upvr_4.ClearTextOnFocus = false
+TextBox_upvr_4.Font = Enum.Font.Code
+TextBox_upvr_4.PlaceholderText = "PUT USERID HERE"
+TextBox_upvr_4.Text = ""
+TextBox_upvr_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_upvr_4.TextSize = 14
+TextLabel_12_upvr.Name = "MM"
+TextLabel_12_upvr.Parent = Frame_4_upvr
+TextLabel_12_upvr.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12_upvr.BackgroundTransparency = 0.7
+TextLabel_12_upvr.BorderSizePixel = 0
+TextLabel_12_upvr.Position = UDim2.new(0.5, -100, 0.5, 15)
+TextLabel_12_upvr.Size = UDim2.new(0, 200, 0, 29)
+TextLabel_12_upvr.Font = Enum.Font.SciFi
+TextLabel_12_upvr.Text = "NO OUTFIT FOUND"
+TextLabel_12_upvr.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12_upvr.TextSize = 15
+Frame_9.Name = "Search"
+Frame_9.Parent = Frame_8
+Frame_9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_9.BackgroundTransparency = 1
+Frame_9.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Frame_9.ClipsDescendants = true
+Frame_9.Position = UDim2.new(-1, -30, 0, -10)
+Frame_9.Size = UDim2.new(1, 20, 1, 20)
+Frame_3_upvr.Parent = Frame_9
+Frame_3_upvr.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3_upvr.BackgroundTransparency = 0.75
+Frame_3_upvr.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Frame_3_upvr.BorderSizePixel = 10
+Frame_3_upvr.ClipsDescendants = true
+Frame_3_upvr.Position = UDim2.new(1, 10, 0, 10)
+Frame_3_upvr.Size = UDim2.new(1, -10, 1, -20)
+TextLabel_22.Name = "HI"
+TextLabel_22.Parent = Frame_3_upvr
+TextLabel_22.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_22.BackgroundTransparency = 1
+TextLabel_22.BorderSizePixel = 0
+TextLabel_22.Position = UDim2.new(0.5, -100, 0, 0)
+TextLabel_22.Size = UDim2.new(0, 200, 0, 25)
+TextLabel_22.Font = Enum.Font.SourceSansLight
+TextLabel_22.Text = "Search mode activated."
+TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.TextSize = 12
+TextBox_upvr_2.Name = "SE"
+TextBox_upvr_2.Parent = Frame_3_upvr
+TextBox_upvr_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_upvr_2.BackgroundTransparency = 0.7
+TextBox_upvr_2.Position = UDim2.new(0.5, -100, 0.5, -14)
+TextBox_upvr_2.Size = UDim2.new(0, 200, 0, 29)
+TextBox_upvr_2.ClearTextOnFocus = false
+TextBox_upvr_2.Font = Enum.Font.Code
+TextBox_upvr_2.PlaceholderText = "SEARCH MORPH HERE"
+TextBox_upvr_2.Text = ""
+TextBox_upvr_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_upvr_2.TextSize = 14
+Frame_upvr.Name = "HelpFrame"
+Frame_upvr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_upvr.Position = UDim2.new(0.324999988, 0, 1.25, 0)
+Frame_upvr.Size = UDim2.new(0.349999994, 0, 0.5, 0)
+Frame_upvr.Style = Enum.FrameStyle.RobloxRound
+Frame_upvr.Parent = script
+ScrollingFrame_2.Parent = Frame_upvr
+ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame_2.BackgroundTransparency = 1
+ScrollingFrame_2.BorderSizePixel = 0
+ScrollingFrame_2.Position = UDim2.new(0, 5, 0, 0)
+ScrollingFrame_2.Size = UDim2.new(1, -5, 1, 0)
+ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 0, 0)
+ScrollingFrame_2.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+ScrollingFrame_2.ScrollBarThickness = 3
+ScrollingFrame_2.VerticalScrollBarInset = Enum.ScrollBarInset.Always
+ScrollingFrame_2.AutomaticCanvasSize = Enum.AutomaticSize.Y
+TextLabel_34.Name = "Title"
+TextLabel_34.Parent = ScrollingFrame_2
+TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_34.BackgroundTransparency = 1
+TextLabel_34.Size = UDim2.new(1, 0, 0, 30)
+TextLabel_34.Font = Enum.Font.TitilliumWeb
+TextLabel_34.Text = "Keybind:"
+TextLabel_34.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextLabel_34.TextScaled = true
+TextLabel_34.TextSize = 20
+TextLabel_34.TextWrapped = true
+UIListLayout_2.Parent = ScrollingFrame_2
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+TextLabel_30.Name = '2'
+TextLabel_30.Parent = ScrollingFrame_2
+TextLabel_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_30.BackgroundTransparency = 1
+TextLabel_30.LayoutOrder = 2
+TextLabel_30.Size = UDim2.new(1, 0, 0, 25)
+TextLabel_30.Font = Enum.Font.TitilliumWeb
+TextLabel_30.Text = "X: Switch to the next morph (or outfit if UserId mode and Outfit mode is on)"
+TextLabel_30.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_30.TextSize = 20
+TextLabel_30.TextWrapped = true
+TextLabel_30.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_8.Name = '1'
+TextLabel_8.Parent = ScrollingFrame_2
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1
+TextLabel_8.LayoutOrder = 1
+TextLabel_8.Size = UDim2.new(1, 0, 0, 25)
+TextLabel_8.Font = Enum.Font.TitilliumWeb
+TextLabel_8.Text = "Z: Toggle UserId mode. Beware that this mode will not work if a terminated user is inputted into the bar."
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 20
+TextLabel_8.TextWrapped = true
+TextLabel_8.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_42.Name = '3'
+TextLabel_42.Parent = ScrollingFrame_2
+TextLabel_42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_42.BackgroundTransparency = 1
+TextLabel_42.LayoutOrder = 3
+TextLabel_42.Size = UDim2.new(1, 0, 0, 25)
+TextLabel_42.Font = Enum.Font.TitilliumWeb
+TextLabel_42.Text = "C: Switch to the previous morph (or outfit if UserId and Outfit mode is on)"
+TextLabel_42.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_42.TextSize = 20
+TextLabel_42.TextWrapped = true
+TextLabel_42.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_28.Name = '5'
+TextLabel_28.Parent = ScrollingFrame_2
+TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_28.BackgroundTransparency = 1
+TextLabel_28.LayoutOrder = 5
+TextLabel_28.Size = UDim2.new(1, 0, 0, 25)
+TextLabel_28.Font = Enum.Font.TitilliumWeb
+TextLabel_28.Text = "V: While the mouse is hovering to a player's character: <br/>Copy the player's userid that is hovered by the mouse"
+TextLabel_28.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_28.TextSize = 20
+TextLabel_28.TextWrapped = true
+TextLabel_28.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_10.Name = '6'
+TextLabel_10.Parent = ScrollingFrame_2
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1
+TextLabel_10.LayoutOrder = 6
+TextLabel_10.Size = UDim2.new(1, 0, 0, 25)
+TextLabel_10.Font = Enum.Font.TitilliumWeb
+TextLabel_10.Text = "B: Apply the morph to yourself"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextSize = 20
+TextLabel_10.TextWrapped = true
+TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_4.Name = '9'
+TextLabel_4.Parent = ScrollingFrame_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.LayoutOrder = 9
+TextLabel_4.Size = UDim2.new(1, 0, 0, 25)
+TextLabel_4.Font = Enum.Font.TitilliumWeb
+TextLabel_4.Text = "F: While the mouse is hovering on a character (can be a npc): <br/>Copy the character model into the gun"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 20
+TextLabel_4.TextWrapped = true
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_13.Name = "10"
+TextLabel_13.Parent = ScrollingFrame_2
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1
+TextLabel_13.LayoutOrder = 10
+TextLabel_13.Size = UDim2.new(1, 0, 0, 25)
+TextLabel_13.Font = Enum.Font.TitilliumWeb
+TextLabel_13.Text = "G: Toggle Custom mode. While this mode is on, use the character that is saved to the gun instead.<br/>See the keybind \"F\" for more info.<br/>If LeftShift is held, toggle Morph Ability instead."
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.TextSize = 20
+TextLabel_13.TextWrapped = true
+TextLabel_13.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_15.Name = "12"
+TextLabel_15.Parent = ScrollingFrame_2
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1
+TextLabel_15.LayoutOrder = 12
+TextLabel_15.Size = UDim2.new(1, 0, 0, 25)
+TextLabel_15.Font = Enum.Font.TitilliumWeb
+TextLabel_15.Text = "H: Toggle the keybind gui"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextSize = 20
+TextLabel_15.TextWrapped = true
+TextLabel_15.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_27.Name = '7'
+TextLabel_27.Parent = ScrollingFrame_2
+TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_27.BackgroundTransparency = 1
+TextLabel_27.LayoutOrder = 7
+TextLabel_27.Size = UDim2.new(1, 0, 0, 25)
+TextLabel_27.Font = Enum.Font.TitilliumWeb
+TextLabel_27.Text = "N: Toggle name change (sync the humanoid.DisplayName with the morph name)<br/>If LeftShift is held, toggle True name change instead (sync the character name with the morph name)."
+TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_27.TextSize = 20
+TextLabel_27.TextWrapped = true
+TextLabel_27.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_2.Name = '8'
+TextLabel_2.Parent = ScrollingFrame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.LayoutOrder = 8
+TextLabel_2.Size = UDim2.new(1, 0, 0, 25)
+TextLabel_2.Font = Enum.Font.TitilliumWeb
+TextLabel_2.Text = "M: Toggle Search mode (search a morph using number or string)"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 20
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_38.Name = "Title"
+TextLabel_38.Parent = ScrollingFrame_2
+TextLabel_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_38.BackgroundTransparency = 1
+TextLabel_38.LayoutOrder = 15
+TextLabel_38.Size = UDim2.new(1, 0, 0, 30)
+TextLabel_38.Font = Enum.Font.TitilliumWeb
+TextLabel_38.Text = "Morphlist:"
+TextLabel_38.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextLabel_38.TextScaled = true
+TextLabel_38.TextSize = 20
+TextLabel_38.TextWrapped = true
+TextLabel_25.Name = "11"
+TextLabel_25.Parent = ScrollingFrame_2
+TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_25.BackgroundTransparency = 1
+TextLabel_25.LayoutOrder = 11
+TextLabel_25.Size = UDim2.new(1, 0, 0, 25)
+TextLabel_25.Font = Enum.Font.TitilliumWeb
+TextLabel_25.Text = "P: Change randomizer mode.<br/>Bag randomizer make sure that each shot will be a different morph while pure randomizer doesn't."
+TextLabel_25.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_25.TextSize = 20
+TextLabel_25.TextWrapped = true
+TextLabel_25.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_15.Name = "13"
+TextLabel_15.Parent = ScrollingFrame_2
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1
+TextLabel_15.LayoutOrder = 13
+TextLabel_15.Size = UDim2.new(1, 0, 0, 25)
+TextLabel_15.Font = Enum.Font.TitilliumWeb
+TextLabel_15.Text = "P: Toggle user t-shirt mode.<br/>This mode will automatically apply a t-shirt with the player's portrait into the character."
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextSize = 20
+TextLabel_15.TextWrapped = true
+TextLabel_15.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel.Name = "14"
+TextLabel.Parent = ScrollingFrame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1
+TextLabel.LayoutOrder = 13
+TextLabel.Size = UDim2.new(1, 0, 0, 25)
+TextLabel.Font = Enum.Font.TitilliumWeb
+TextLabel.Text = "R: Force refresh Morphlist. If LeftShift is held, toggle Include Excluded instead."
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 20
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_24.Name = '4'
+TextLabel_24.Parent = ScrollingFrame_2
+TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.BackgroundTransparency = 1
+TextLabel_24.LayoutOrder = 4
+TextLabel_24.Size = UDim2.new(1, 0, 0, 25)
+TextLabel_24.Font = Enum.Font.TitilliumWeb
+TextLabel_24.Text = "Q: Toggle Outfit mode. Require UserId mode to be enabled. Beware that this mode will not work if the inputted user doesn't have any outfit or is terminated."
+TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.TextSize = 20
+TextLabel_24.TextWrapped = true
+TextLabel_24.TextXAlignment = Enum.TextXAlignment.Left
+for _, v in pairs(ScrollingFrame_2:GetChildren()) do
+	if v:IsA("TextLabel") then
+		v.RichText = true
+		if v.Name ~= "Title" then
+			v.AutomaticSize = Enum.AutomaticSize.Y
+		end
+	end
+end
+function WaitForChild(arg1, arg2, arg3) -- Line 385
+	-- KONSTANTERROR: [0] 1. Error Block 1 start (CF ANALYSIS FAILED)
+	-- KONSTANTERROR: [0] 1. Error Block 1 end (CF ANALYSIS FAILED)
+	-- KONSTANTERROR: [36] 30. Error Block 10 start (CF ANALYSIS FAILED)
+	-- KONSTANTERROR: [36] 30. Error Block 10 end (CF ANALYSIS FAILED)
+	-- KONSTANTERROR: [2] 3. Error Block 17 start (CF ANALYSIS FAILED)
+	-- KONSTANTWARNING: Failed to evaluate expression, replaced with nil [36.5]
+	if nil then
+	end
+	if arg3 then
+		-- KONSTANTWARNING: Failed to evaluate expression, replaced with nil [36.65666]
+		if arg3 < 0 then
+			-- KONSTANTWARNING: GOTO [36] #30
+		end
+	elseif not false then
+		-- KONSTANTWARNING: Failed to evaluate expression, replaced with nil [36.6]
+		-- KONSTANTERROR: Expression was reused, decompilation is incorrect
+		if nil < 0 then
+		end
+	end
+	-- KONSTANTERROR: [2] 3. Error Block 17 end (CF ANALYSIS FAILED)
+end
+local TextLabel_23_upvr = Instance.new("TextLabel")
+TextLabel_23_upvr.Name = '1'
+TextLabel_23_upvr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23_upvr.BackgroundTransparency = 1
+TextLabel_23_upvr.LayoutOrder = 0
+TextLabel_23_upvr.Size = UDim2.new(1, 0, 0, 20)
+TextLabel_23_upvr.Font = Enum.Font.TitilliumWeb
+TextLabel_23_upvr.Text = ""
+TextLabel_23_upvr.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23_upvr.TextSize = 20
+TextLabel_23_upvr.TextWrapped = true
+TextLabel_23_upvr.TextXAlignment = Enum.TextXAlignment.Left
+tool = script.Parent -- Setting global
+remote = tool:WaitForChild("MainRemote") -- Setting global
+morphlist = nil -- Setting global
+senslist = nil -- Setting global
+Frame_upvr.Position = UDim2.new(0.325, 0, 1.25, 0)
+Frame_3_upvr.Position = UDim2.new(1, 10, 0, 10)
+local tbl_2_upvr = {}
+function Hint(arg1, arg2) -- Line 426
+	--[[ Upvalues[1]:
+		[1]: TextLabel_36_upvr (readonly)
+	]]
+	TextLabel_36_upvr.Text = arg1
+	local var138_upvw = false
+	local var140_upvw
+	var140_upvw = TextLabel_36_upvr.Changed:Connect(function(arg1_3) -- Line 430
+		--[[ Upvalues[2]:
+			[1]: var138_upvw (read and write)
+			[2]: var140_upvw (read and write)
+		]]
+		if arg1_3 == "Text" then
+			var138_upvw = true
+			var140_upvw:Disconnect()
+		end
+	end)
+	spawn(function() -- Line 436
+		--[[ Upvalues[4]:
+			[1]: arg2 (readonly)
+			[2]: var140_upvw (read and write)
+			[3]: var138_upvw (read and write)
+			[4]: TextLabel_36_upvr (copied, readonly)
+		]]
+		wait(tonumber(arg2) or 5)
+		var140_upvw:Disconnect()
+		if not var138_upvw then
+			TextLabel_36_upvr.Text = "Press \"H\" to show the Keybind"
+		end
+	end)
+end
+local len_upvr_2 = #ScrollingFrame_2:GetChildren()
+function CreateText(arg1, arg2, arg3) -- Line 444
+	--[[ Upvalues[2]:
+		[1]: TextLabel_23_upvr (readonly)
+		[2]: len_upvr_2 (readonly)
+	]]
+	local clone = TextLabel_23_upvr:Clone()
+	clone.LayoutOrder = arg1 + len_upvr_2 + 1
+	clone.Parent = arg3
+	clone.Text = arg1..": "..arg2
+end
+mode = {
+	RequireUserId = false;
+	Morph = "random";
+	UserId = 686644;
+	Hit = nil;
+	Name = true;
+	TrueName = false;
+	Custom = false;
+	SearchMode = false;
+	Bag = true;
+	Outfit = false;
+	Cursor = 1;
+	OutfitId = nil;
+	Graphic = false;
+	FolderName = "";
+	MorphNum = 0;
+	Sensitive = false;
+	MorphAbility = false;
+} -- Setting global
+overrided = false -- Setting global
+remote.OnClientEvent:Connect(function(arg1, arg2) -- Line 470
+	--[[ Upvalues[1]:
+		[1]: tbl_2_upvr (readonly)
+	]]
+	if arg1 == "morphlist" then
+		if not morphlist then
+			morphlist = {} -- Setting global
+		end
+		if 0 < #arg2[1] - #morphlist then
+			Hint("Added "..(#arg2[1] - #morphlist).." morphs into the gun.")
+		end
+		morphlist = arg2[1] -- Setting global
+		senslist = arg2[2] -- Setting global
+	else
+		if arg1 == "outfits" then
+			tbl_2_upvr[arg2[1]] = arg2[2]
+			return
+		end
+		if arg1 == "custommorph" then
+			mode.FolderName = arg2
+			Hint("Character is now copied into the gun.")
+			return
+		end
+		if arg1 == "override" then
+			if typeof(arg2) == typeof({}) then
+				for i_3, v_3 in pairs(arg2) do
+					mode[i_3] = v_3
+				end
+			end
+			overrided = true -- Setting global
+		end
+	end
+end)
+remote:FireServer("getdata")
+if not morphlist or 1 > #morphlist then
+	remote:FireServer("refresh")
+end
+function SearchTab(arg1, arg2) -- Line 496
+	if not arg1 or typeof(arg1) ~= typeof({}) or arg2 and tostring(arg2) then return end
+	for i_2, v_2 in pairs(arg1) do
+		if tostring(v_2) and tostring(v_2):lower():sub(1, #arg2) == arg2:lower() then
+			return i_2
+		end
+	end
+	return nil
+end
+local clone_3_upvr = WaitForChild(script, "ResetOnSpawn"):Clone()
+spawn(function() -- Line 505
+	--[[ Upvalues[11]:
+		[1]: TextLabel_39_upvr (readonly)
+		[2]: TextBox_upvr_4 (readonly)
+		[3]: TextLabel_37_upvr (readonly)
+		[4]: Frame_4_upvr (readonly)
+		[5]: tbl_2_upvr (readonly)
+		[6]: TextLabel_12_upvr (readonly)
+		[7]: Frame_3_upvr (readonly)
+		[8]: TextBox_upvr_2 (readonly)
+		[9]: ScreenGui_upvr (readonly)
+		[10]: Frame_upvr (readonly)
+		[11]: clone_3_upvr (readonly)
+	]]
+	repeat
+		wait()
+	until not morphlist or not overrided or senslist
+	local LocalPlayer_upvr_2 = game:GetService("Players").LocalPlayer
+	if not LocalPlayer_upvr_2 then
+	else
+		local var159_upvw
+		TextLabel_39_upvr.Text = "Transmorph Ray Gun"
+		local var160_upvw = false
+		local var161_upvw = false
+		local var162_upvw = false
+		pcall(function() -- Line 521
+			--[[ Upvalues[1]:
+				[1]: TextBox_upvr_4 (copied, readonly)
+			]]
+			TextBox_upvr_4.PlaceholderText = mode.UserId.." | "..game:GetService("Players"):GetNameFromUserIdAsync(mode.UserId) or "Unknown"
+		end)
+		local function _(arg1) -- Line 524, Named "CheckIfSensitive"
+			for _, v_4 in pairs(senslist) do
+				if tostring(arg1) == tostring(v_4) then
+					return true
+				end
+			end
+			return false
+		end
+		local function _() -- Line 532, Named "change"
+			--[[ Upvalues[7]:
+				[1]: TextLabel_37_upvr (copied, readonly)
+				[2]: var160_upvw (read and write)
+				[3]: Frame_4_upvr (copied, readonly)
+				[4]: tbl_2_upvr (copied, readonly)
+				[5]: TextLabel_12_upvr (copied, readonly)
+				[6]: var161_upvw (read and write)
+				[7]: Frame_3_upvr (copied, readonly)
+			]]
+			spawn(function() -- Line 533
+				--[[ Upvalues[7]:
+					[1]: TextLabel_37_upvr (copied, readonly)
+					[2]: var160_upvw (copied, read and write)
+					[3]: Frame_4_upvr (copied, readonly)
+					[4]: tbl_2_upvr (copied, readonly)
+					[5]: TextLabel_12_upvr (copied, readonly)
+					[6]: var161_upvw (copied, read and write)
+					[7]: Frame_3_upvr (copied, readonly)
+				]]
+				-- KONSTANTERROR: [0] 1. Error Block 1 start (CF ANALYSIS FAILED)
+				-- KONSTANTERROR: [0] 1. Error Block 1 end (CF ANALYSIS FAILED)
+				-- KONSTANTERROR: [16] 12. Error Block 61 start (CF ANALYSIS FAILED)
+				TextLabel_37_upvr.Text = "MORPH: {"..mode.MorphNum.."} "..string.upper(mode.Morph or "UNKNOWN")
+				-- KONSTANTERROR: [16] 12. Error Block 61 end (CF ANALYSIS FAILED)
+			end)
+		end
+		local function FindCharacterAncestor_upvr(arg1) -- Line 582, Named "FindCharacterAncestor"
+			--[[ Upvalues[1]:
+				[1]: FindCharacterAncestor_upvr (readonly)
+			]]
+			if arg1 and arg1 ~= workspace then
+				local class_Humanoid = arg1:FindFirstChildOfClass("Humanoid")
+				if class_Humanoid then
+					return arg1, class_Humanoid
+				end
+				return FindCharacterAncestor_upvr(arg1.Parent)
+			end
+			return nil
+		end
+		spawn(function() -- Line 593
+			--[[ Upvalues[7]:
+				[1]: TextLabel_37_upvr (copied, readonly)
+				[2]: var160_upvw (read and write)
+				[3]: Frame_4_upvr (copied, readonly)
+				[4]: tbl_2_upvr (copied, readonly)
+				[5]: TextLabel_12_upvr (copied, readonly)
+				[6]: var161_upvw (read and write)
+				[7]: Frame_3_upvr (copied, readonly)
+			]]
+			while wait() do
+				if mode.Morph == nil then
+					mode.Morph = "random"
+				end
+				spawn(function() -- Line 533
+					--[[ Upvalues[7]:
+						[1]: TextLabel_37_upvr (copied, readonly)
+						[2]: var160_upvw (copied, read and write)
+						[3]: Frame_4_upvr (copied, readonly)
+						[4]: tbl_2_upvr (copied, readonly)
+						[5]: TextLabel_12_upvr (copied, readonly)
+						[6]: var161_upvw (copied, read and write)
+						[7]: Frame_3_upvr (copied, readonly)
+					]]
+					-- KONSTANTERROR: [0] 1. Error Block 1 start (CF ANALYSIS FAILED)
+					-- KONSTANTERROR: [0] 1. Error Block 1 end (CF ANALYSIS FAILED)
+					-- KONSTANTERROR: [16] 12. Error Block 61 start (CF ANALYSIS FAILED)
+					TextLabel_37_upvr.Text = "MORPH: {"..mode.MorphNum.."} "..string.upper(mode.Morph or "UNKNOWN")
+					-- KONSTANTERROR: [16] 12. Error Block 61 end (CF ANALYSIS FAILED)
+				end)
+			end
+		end)
+		TextBox_upvr_4.FocusLost:Connect(function(arg1) -- Line 600
+			--[[ Upvalues[1]:
+				[1]: TextBox_upvr_4 (copied, readonly)
+			]]
+			if not arg1 or not mode.RequireUserId then
+			else
+				local Text_3_upvw = TextBox_upvr_4.Text
+				TextBox_upvr_4.Text = ""
+				if tonumber(Text_3_upvw) then
+					local _, _ = pcall(function() -- Line 606
+						--[[ Upvalues[1]:
+							[1]: Text_3_upvw (read and write)
+						]]
+						game:GetService("Players"):GetNameFromUserIdAsync(tonumber(Text_3_upvw))
+					end)
+				else
+					local pcall_result1, _ = pcall(function() -- Line 610
+						--[[ Upvalues[1]:
+							[1]: Text_3_upvw (read and write)
+						]]
+						Text_3_upvw = game:GetService("Players"):GetUserIdFromNameAsync(tostring(Text_3_upvw))
+					end)
+				end
+				if not pcall_result1 or not Text_3_upvw then return end
+				mode.Cursor = 1
+				mode.UserId = tonumber(Text_3_upvw)
+				pcall(function() -- Line 617
+					--[[ Upvalues[1]:
+						[1]: TextBox_upvr_4 (copied, readonly)
+					]]
+					TextBox_upvr_4.PlaceholderText = mode.UserId.." | "..game:GetService("Players"):GetNameFromUserIdAsync(mode.UserId) or "Unknown"
+				end)
+			end
+		end)
+		local var183_upvw = false
+		TextBox_upvr_2.FocusLost:Connect(function(arg1) -- Line 621
+			--[[ Upvalues[2]:
+				[1]: var183_upvw (read and write)
+				[2]: TextBox_upvr_2 (copied, readonly)
+			]]
+			if not arg1 or var183_upvw or not mode.SearchMode then
+			else
+				var183_upvw = true
+				local Text = TextBox_upvr_2.Text
+				TextBox_upvr_2.TextEditable = false
+				TextBox_upvr_2.Text = "PENDING"
+				if tonumber(Text) then
+					if morphlist[tonumber(Text)] or tonumber(Text) == 0 then
+						mode.MorphNum = tonumber(Text)
+						if tonumber(Text) == 0 then
+							mode.Morph = nil
+						else
+							mode.Morph = morphlist[tonumber(Text)]
+						end
+						TextBox_upvr_2.Text = "MORPH FOUND"
+					else
+						TextBox_upvr_2.Text = "NO MORPH FOUND"
+					end
+				elseif tostring(Text) then
+					local SearchTab_result1 = SearchTab(morphlist, tostring(Text))
+					if SearchTab_result1 or tostring(Text):lower() == "random" then
+						if tostring(Text):lower() == "random" then
+							mode.MorphNum = 0
+							mode.Morph = nil
+						else
+							mode.MorphNum = tonumber(SearchTab_result1)
+							mode.Morph = morphlist[tonumber(SearchTab_result1)]
+						end
+						TextBox_upvr_2.Text = "MORPH FOUND"
+					else
+						TextBox_upvr_2.Text = "NO MORPH FOUND"
+					end
+				end
+				wait(1)
+				var183_upvw = false
+				TextBox_upvr_2.Text = ""
+				TextBox_upvr_2.TextEditable = true
+			end
+		end)
+		local var186_upvw = false
+		local var187_upvw = false
+		local var188_upvw
+		local function Equipped_upvr() -- Line 661, Named "Equipped"
+			--[[ Upvalues[11]:
+				[1]: var162_upvw (read and write)
+				[2]: LocalPlayer_upvr_2 (readonly)
+				[3]: ScreenGui_upvr (copied, readonly)
+				[4]: var159_upvw (read and write)
+				[5]: tbl_2_upvr (copied, readonly)
+				[6]: var186_upvw (read and write)
+				[7]: var187_upvw (read and write)
+				[8]: var188_upvw (read and write)
+				[9]: Frame_upvr (copied, readonly)
+				[10]: FindCharacterAncestor_upvr (readonly)
+				[11]: TextBox_upvr_4 (copied, readonly)
+			]]
+			var162_upvw = true
+			local class_Humanoid_2 = LocalPlayer_upvr_2.Character:FindFirstChildOfClass("Humanoid")
+			if not LocalPlayer_upvr_2 or not class_Humanoid_2 or class_Humanoid_2.Health == 0 then
+			else
+				ScreenGui_upvr.Parent = LocalPlayer_upvr_2:FindFirstChildOfClass("PlayerGui")
+				local mouse_upvr = LocalPlayer_upvr_2:GetMouse()
+				var159_upvw = game:GetService("UserInputService").InputBegan:Connect(function(arg1, arg2) -- Line 670
+					--[[ Upvalues[10]:
+						[1]: tbl_2_upvr (copied, readonly)
+						[2]: mouse_upvr (readonly)
+						[3]: var186_upvw (copied, read and write)
+						[4]: var187_upvw (copied, read and write)
+						[5]: var188_upvw (copied, read and write)
+						[6]: Frame_upvr (copied, readonly)
+						[7]: ScreenGui_upvr (copied, readonly)
+						[8]: FindCharacterAncestor_upvr (copied, readonly)
+						[9]: TextBox_upvr_4 (copied, readonly)
+						[10]: var162_upvw (copied, read and write)
+					]]
+					-- KONSTANTERROR: [0] 1. Error Block 1 start (CF ANALYSIS FAILED)
+					-- KONSTANTERROR: [0] 1. Error Block 1 end (CF ANALYSIS FAILED)
+					-- KONSTANTERROR: [1] 2. Error Block 2 start (CF ANALYSIS FAILED)
+					do
+						return
+					end
+					-- KONSTANTERROR: [1] 2. Error Block 2 end (CF ANALYSIS FAILED)
+					-- KONSTANTERROR: [2] 3. Error Block 3 start (CF ANALYSIS FAILED)
+					-- KONSTANTERROR: [2] 3. Error Block 3 end (CF ANALYSIS FAILED)
+				end)
+			end
+		end
+		local function _() -- Line 790, Named "Unequipped"
+			--[[ Upvalues[3]:
+				[1]: var162_upvw (read and write)
+				[2]: ScreenGui_upvr (copied, readonly)
+				[3]: var159_upvw (read and write)
+			]]
+			var162_upvw = false
+			ScreenGui_upvr.Parent = script.Parent
+			if var159_upvw then
+				var159_upvw:Disconnect()
+			end
+		end
+		game:GetService("RunService").RenderStepped:Connect(function() -- Line 795
+			mode.Hit = game:GetService("Players").LocalPlayer:GetMouse().Hit.Position
+			remote:FireServer("changemode", mode)
+		end)
+		local var194_upvw
+		tool:GetPropertyChangedSignal("Parent"):Connect(function() -- Line 800
+			--[[ Upvalues[6]:
+				[1]: var194_upvw (read and write)
+				[2]: LocalPlayer_upvr_2 (readonly)
+				[3]: Equipped_upvr (readonly)
+				[4]: var162_upvw (read and write)
+				[5]: ScreenGui_upvr (copied, readonly)
+				[6]: var159_upvw (read and write)
+			]]
+			if tool.Parent == var194_upvw then
+			else
+				var194_upvw = tool.Parent
+				print(var194_upvw)
+				if tool.Parent == LocalPlayer_upvr_2.Character then
+					Equipped_upvr()
+				else
+					var162_upvw = false
+					ScreenGui_upvr.Parent = script.Parent
+					if var159_upvw then
+						var159_upvw:Disconnect()
+					end
+				end
+				print(tool.Parent)
+			end
+		end)
+		clone_3_upvr.Parent = ScreenGui_upvr
+		if LocalPlayer_upvr_2.Character and tool.Parent == LocalPlayer_upvr_2.Character then
+			ScreenGui_upvr.Parent = LocalPlayer_upvr_2:FindFirstChildOfClass("PlayerGui")
+			Equipped_upvr()
+		end
+		local ObjectValue_3 = Instance.new("ObjectValue")
+		ObjectValue_3.Name = "ScriptValue"
+		ObjectValue_3.Parent = clone_3_upvr
+		ObjectValue_3.Value = script
+		local ObjectValue_2 = Instance.new("ObjectValue")
+		ObjectValue_2.Name = "ToolValue"
+		ObjectValue_2.Parent = clone_3_upvr
+		ObjectValue_2.Value = tool
+		clone_3_upvr.Disabled = false
+	end
+end)]]></ProtectedString><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[MainClient]]></string><BinaryString name="Tags"></BinaryString></Properties><Item class="LocalScript" referent="4"><Properties><ProtectedString name="Source"><![CDATA[-- Saved by UniversalSynSaveInstance (Join to Copy Games) https://discord.gg/wx4ThpAsmw
+
+-- Decompiler will be improved VERY SOON!
+-- Decompiled with Konstant V2.1, a fast Luau decompiler made in Luau by plusgiant5 (https://discord.gg/brNTY8nX8t)
+-- Decompiled on 2025-08-24 08:24:21
+-- Luau version 6, Types version 3
+-- Time taken: 0.001306 seconds
+
+function WaitForChild(arg1, arg2, arg3) -- Line 1
+	-- KONSTANTERROR: [0] 1. Error Block 1 start (CF ANALYSIS FAILED)
+	-- KONSTANTERROR: [0] 1. Error Block 1 end (CF ANALYSIS FAILED)
+	-- KONSTANTERROR: [36] 30. Error Block 10 start (CF ANALYSIS FAILED)
+	-- KONSTANTERROR: [36] 30. Error Block 10 end (CF ANALYSIS FAILED)
+	-- KONSTANTERROR: [2] 3. Error Block 17 start (CF ANALYSIS FAILED)
+	-- KONSTANTWARNING: Failed to evaluate expression, replaced with nil [36.5]
+	if nil then
+	end
+	if arg3 then
+		-- KONSTANTWARNING: Failed to evaluate expression, replaced with nil [36.65666]
+		if arg3 < 0 then
+			-- KONSTANTWARNING: GOTO [36] #30
+		end
+	elseif not false then
+		-- KONSTANTWARNING: Failed to evaluate expression, replaced with nil [36.6]
+		-- KONSTANTERROR: Expression was reused, decompilation is incorrect
+		if nil < 0 then
+		end
+	end
+	-- KONSTANTERROR: [2] 3. Error Block 17 end (CF ANALYSIS FAILED)
+end
+local Value_upvr = WaitForChild(script, "ScriptValue").Value
+local Value_upvr_2 = WaitForChild(script, "ToolValue").Value
+script:ClearAllChildren()
+local Parent_upvr = script.Parent
+game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function() -- Line 26
+	--[[ Upvalues[2]:
+		[1]: Parent_upvr (readonly)
+		[2]: Value_upvr (readonly)
+	]]
+	if Parent_upvr:IsA("ScreenGui") then
+		Parent_upvr.Parent = Value_upvr
+	end
+end)
+local var6_upvw
+local LocalPlayer_upvr = game:GetService("Players").LocalPlayer
+Value_upvr_2:GetPropertyChangedSignal("Parent"):Connect(function() -- Line 32
+	--[[ Upvalues[5]:
+		[1]: Value_upvr_2 (readonly)
+		[2]: var6_upvw (read and write)
+		[3]: LocalPlayer_upvr (readonly)
+		[4]: Parent_upvr (readonly)
+		[5]: Value_upvr (readonly)
+	]]
+	if Value_upvr_2.Parent == var6_upvw then
+	else
+		var6_upvw = Value_upvr_2.Parent
+		if Value_upvr_2.Parent ~= LocalPlayer_upvr.Character and Value_upvr_2.Parent ~= LocalPlayer_upvr:FindFirstChildOfClass("Backpack") and Parent_upvr.Parent ~= Value_upvr then
+			Parent_upvr.Parent = Value_upvr
+		end
+	end
+end)]]></ProtectedString><bool name="Disabled">true</bool><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[ResetOnSpawn]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="Frame" referent="5"><Properties><token name="Style">3</token><Color3 name="BackgroundColor3"><R>1</R><G>1</G><B>1</B></Color3><UDim2 name="Position"><XS>0.32499998807907104</XS><XO>0</XO><YS>1.25</YS><YO>0</YO></UDim2><UDim2 name="Size"><XS>0.3499999940395355</XS><XO>0</XO><YS>0.5</YS><YO>0</YO></UDim2><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[HelpFrame]]></string><BinaryString name="Tags"></BinaryString></Properties><Item class="ScrollingFrame" referent="6"><Properties><token name="AutomaticCanvasSize">2</token><UDim2 name="CanvasSize"><XS>0</XS><XO>0</XO><YS>0</YS><YO>0</YO></UDim2><token name="HorizontalScrollBarInset">1</token><int name="ScrollBarThickness">3</int><token name="VerticalScrollBarInset">2</token><Color3 name="BackgroundColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="BackgroundTransparency">1</float><int name="BorderSizePixel">0</int><UDim2 name="Position"><XS>0</XS><XO>5</XO><YS>0</YS><YO>0</YO></UDim2><UDim2 name="Size"><XS>1</XS><XO>-5</XO><YS>1</YS><YO>0</YO></UDim2><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><BinaryString name="Tags"></BinaryString></Properties><Item class="TextLabel" referent="7"><Properties><Font name="FontFace"><Family><url><![CDATA[rbxasset://fonts/families/TitilliumWeb.json]]></url></Family><Weight>400</Weight><Style>Normal</Style></Font><bool name="RichText">true</bool><string name="Text"><![CDATA[Keybind:]]></string><Color3 name="TextColor3"><R>1</R><G>1</G><B>0</B></Color3><bool name="TextScaled">true</bool><float name="TextSize">20</float><bool name="TextWrapped">true</bool><Color3 name="BackgroundColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="BackgroundTransparency">1</float><UDim2 name="Size"><XS>1</XS><XO>0</XO><YS>0</YS><YO>30</YO></UDim2><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[Title]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="UIListLayout" referent="8"><Properties><token name="SortOrder">2</token><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="TextLabel" referent="9"><Properties><Font name="FontFace"><Family><url><![CDATA[rbxasset://fonts/families/TitilliumWeb.json]]></url></Family><Weight>400</Weight><Style>Normal</Style></Font><bool name="RichText">true</bool><string name="Text"><![CDATA[X: Switch to the next morph (or outfit if UserId mode and Outfit mode is on)]]></string><Color3 name="TextColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="TextSize">20</float><bool name="TextWrapped">true</bool><token name="TextXAlignment">0</token><token name="AutomaticSize">2</token><Color3 name="BackgroundColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="BackgroundTransparency">1</float><int name="LayoutOrder">2</int><UDim2 name="Size"><XS>1</XS><XO>0</XO><YS>0</YS><YO>25</YO></UDim2><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[2]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="TextLabel" referent="10"><Properties><Font name="FontFace"><Family><url><![CDATA[rbxasset://fonts/families/TitilliumWeb.json]]></url></Family><Weight>400</Weight><Style>Normal</Style></Font><bool name="RichText">true</bool><string name="Text"><![CDATA[Z: Toggle UserId mode. Beware that this mode will not work if a terminated user is inputted into the bar.]]></string><Color3 name="TextColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="TextSize">20</float><bool name="TextWrapped">true</bool><token name="TextXAlignment">0</token><token name="AutomaticSize">2</token><Color3 name="BackgroundColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="BackgroundTransparency">1</float><int name="LayoutOrder">1</int><UDim2 name="Size"><XS>1</XS><XO>0</XO><YS>0</YS><YO>25</YO></UDim2><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[1]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="TextLabel" referent="11"><Properties><Font name="FontFace"><Family><url><![CDATA[rbxasset://fonts/families/TitilliumWeb.json]]></url></Family><Weight>400</Weight><Style>Normal</Style></Font><bool name="RichText">true</bool><string name="Text"><![CDATA[C: Switch to the previous morph (or outfit if UserId and Outfit mode is on)]]></string><Color3 name="TextColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="TextSize">20</float><bool name="TextWrapped">true</bool><token name="TextXAlignment">0</token><token name="AutomaticSize">2</token><Color3 name="BackgroundColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="BackgroundTransparency">1</float><int name="LayoutOrder">3</int><UDim2 name="Size"><XS>1</XS><XO>0</XO><YS>0</YS><YO>25</YO></UDim2><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[3]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="TextLabel" referent="12"><Properties><Font name="FontFace"><Family><url><![CDATA[rbxasset://fonts/families/TitilliumWeb.json]]></url></Family><Weight>400</Weight><Style>Normal</Style></Font><bool name="RichText">true</bool><string name="Text"><![CDATA[V: While the mouse is hovering to a player's character: <br/>Copy the player's userid that is hovered by the mouse]]></string><Color3 name="TextColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="TextSize">20</float><bool name="TextWrapped">true</bool><token name="TextXAlignment">0</token><token name="AutomaticSize">2</token><Color3 name="BackgroundColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="BackgroundTransparency">1</float><int name="LayoutOrder">5</int><UDim2 name="Size"><XS>1</XS><XO>0</XO><YS>0</YS><YO>25</YO></UDim2><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[5]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="TextLabel" referent="13"><Properties><Font name="FontFace"><Family><url><![CDATA[rbxasset://fonts/families/TitilliumWeb.json]]></url></Family><Weight>400</Weight><Style>Normal</Style></Font><bool name="RichText">true</bool><string name="Text"><![CDATA[B: Apply the morph to yourself]]></string><Color3 name="TextColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="TextSize">20</float><bool name="TextWrapped">true</bool><token name="TextXAlignment">0</token><token name="AutomaticSize">2</token><Color3 name="BackgroundColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="BackgroundTransparency">1</float><int name="LayoutOrder">6</int><UDim2 name="Size"><XS>1</XS><XO>0</XO><YS>0</YS><YO>25</YO></UDim2><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[6]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="TextLabel" referent="14"><Properties><Font name="FontFace"><Family><url><![CDATA[rbxasset://fonts/families/TitilliumWeb.json]]></url></Family><Weight>400</Weight><Style>Normal</Style></Font><bool name="RichText">true</bool><string name="Text"><![CDATA[F: While the mouse is hovering on a character (can be a npc): <br/>Copy the character model into the gun]]></string><Color3 name="TextColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="TextSize">20</float><bool name="TextWrapped">true</bool><token name="TextXAlignment">0</token><token name="AutomaticSize">2</token><Color3 name="BackgroundColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="BackgroundTransparency">1</float><int name="LayoutOrder">9</int><UDim2 name="Size"><XS>1</XS><XO>0</XO><YS>0</YS><YO>25</YO></UDim2><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[9]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="TextLabel" referent="15"><Properties><Font name="FontFace"><Family><url><![CDATA[rbxasset://fonts/families/TitilliumWeb.json]]></url></Family><Weight>400</Weight><Style>Normal</Style></Font><bool name="RichText">true</bool><string name="Text"><![CDATA[G: Toggle Custom mode. While this mode is on, use the character that is saved to the gun instead.<br/>See the keybind "F" for more info.<br/>If LeftShift is held, toggle Morph Ability instead.]]></string><Color3 name="TextColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="TextSize">20</float><bool name="TextWrapped">true</bool><token name="TextXAlignment">0</token><token name="AutomaticSize">2</token><Color3 name="BackgroundColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="BackgroundTransparency">1</float><int name="LayoutOrder">10</int><UDim2 name="Size"><XS>1</XS><XO>0</XO><YS>0</YS><YO>25</YO></UDim2><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[10]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="TextLabel" referent="16"><Properties><Font name="FontFace"><Family><url><![CDATA[rbxasset://fonts/families/TitilliumWeb.json]]></url></Family><Weight>400</Weight><Style>Normal</Style></Font><bool name="RichText">true</bool><string name="Text"><![CDATA[P: Toggle user t-shirt mode.<br/>This mode will automatically apply a t-shirt with the player's portrait into the character.]]></string><Color3 name="TextColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="TextSize">20</float><bool name="TextWrapped">true</bool><token name="TextXAlignment">0</token><token name="AutomaticSize">2</token><Color3 name="BackgroundColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="BackgroundTransparency">1</float><int name="LayoutOrder">13</int><UDim2 name="Size"><XS>1</XS><XO>0</XO><YS>0</YS><YO>25</YO></UDim2><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[13]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="TextLabel" referent="17"><Properties><Font name="FontFace"><Family><url><![CDATA[rbxasset://fonts/families/TitilliumWeb.json]]></url></Family><Weight>400</Weight><Style>Normal</Style></Font><bool name="RichText">true</bool><string name="Text"><![CDATA[N: Toggle name change (sync the humanoid.DisplayName with the morph name)<br/>If LeftShift is held, toggle True name change instead (sync the character name with the morph name).]]></string><Color3 name="TextColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="TextSize">20</float><bool name="TextWrapped">true</bool><token name="TextXAlignment">0</token><token name="AutomaticSize">2</token><Color3 name="BackgroundColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="BackgroundTransparency">1</float><int name="LayoutOrder">7</int><UDim2 name="Size"><XS>1</XS><XO>0</XO><YS>0</YS><YO>25</YO></UDim2><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[7]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="TextLabel" referent="18"><Properties><Font name="FontFace"><Family><url><![CDATA[rbxasset://fonts/families/TitilliumWeb.json]]></url></Family><Weight>400</Weight><Style>Normal</Style></Font><bool name="RichText">true</bool><string name="Text"><![CDATA[M: Toggle Search mode (search a morph using number or string)]]></string><Color3 name="TextColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="TextSize">20</float><bool name="TextWrapped">true</bool><token name="TextXAlignment">0</token><token name="AutomaticSize">2</token><Color3 name="BackgroundColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="BackgroundTransparency">1</float><int name="LayoutOrder">8</int><UDim2 name="Size"><XS>1</XS><XO>0</XO><YS>0</YS><YO>25</YO></UDim2><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[8]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="TextLabel" referent="19"><Properties><Font name="FontFace"><Family><url><![CDATA[rbxasset://fonts/families/TitilliumWeb.json]]></url></Family><Weight>400</Weight><Style>Normal</Style></Font><bool name="RichText">true</bool><string name="Text"><![CDATA[Morphlist:]]></string><Color3 name="TextColor3"><R>1</R><G>1</G><B>0</B></Color3><bool name="TextScaled">true</bool><float name="TextSize">20</float><bool name="TextWrapped">true</bool><Color3 name="BackgroundColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="BackgroundTransparency">1</float><int name="LayoutOrder">15</int><UDim2 name="Size"><XS>1</XS><XO>0</XO><YS>0</YS><YO>30</YO></UDim2><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[Title]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="TextLabel" referent="20"><Properties><Font name="FontFace"><Family><url><![CDATA[rbxasset://fonts/families/TitilliumWeb.json]]></url></Family><Weight>400</Weight><Style>Normal</Style></Font><bool name="RichText">true</bool><string name="Text"><![CDATA[P: Change randomizer mode.<br/>Bag randomizer make sure that each shot will be a different morph while pure randomizer doesn't.]]></string><Color3 name="TextColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="TextSize">20</float><bool name="TextWrapped">true</bool><token name="TextXAlignment">0</token><token name="AutomaticSize">2</token><Color3 name="BackgroundColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="BackgroundTransparency">1</float><int name="LayoutOrder">11</int><UDim2 name="Size"><XS>1</XS><XO>0</XO><YS>0</YS><YO>25</YO></UDim2><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[11]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="TextLabel" referent="21"><Properties><Font name="FontFace"><Family><url><![CDATA[rbxasset://fonts/families/TitilliumWeb.json]]></url></Family><Weight>400</Weight><Style>Normal</Style></Font><bool name="RichText">true</bool><string name="Text"><![CDATA[R: Force refresh Morphlist. If LeftShift is held, toggle Include Excluded instead.]]></string><Color3 name="TextColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="TextSize">20</float><bool name="TextWrapped">true</bool><token name="TextXAlignment">0</token><token name="AutomaticSize">2</token><Color3 name="BackgroundColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="BackgroundTransparency">1</float><int name="LayoutOrder">13</int><UDim2 name="Size"><XS>1</XS><XO>0</XO><YS>0</YS><YO>25</YO></UDim2><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[14]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="TextLabel" referent="22"><Properties><Font name="FontFace"><Family><url><![CDATA[rbxasset://fonts/families/TitilliumWeb.json]]></url></Family><Weight>400</Weight><Style>Normal</Style></Font><bool name="RichText">true</bool><string name="Text"><![CDATA[Q: Toggle Outfit mode. Require UserId mode to be enabled. Beware that this mode will not work if the inputted user doesn't have any outfit or is terminated.]]></string><Color3 name="TextColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="TextSize">20</float><bool name="TextWrapped">true</bool><token name="TextXAlignment">0</token><token name="AutomaticSize">2</token><Color3 name="BackgroundColor3"><R>1</R><G>1</G><B>1</B></Color3><float name="BackgroundTransparency">1</float><int name="LayoutOrder">4</int><UDim2 name="Size"><XS>1</XS><XO>0</XO><YS>0</YS><YO>25</YO></UDim2><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[4]]></string><BinaryString name="Tags"></BinaryString></Properties></Item></Item></Item></Item><Item class="MeshPart" referent="23"><Properties><bool name="DoubleSided">true</bool><Vector3 name="InitialSize"><X>0.7748690247535706</X><Y>0.9840669631958008</Y><Z>1.975064992904663</Z></Vector3><Content name="MeshId"><url><![CDATA[rbxassetid://8920471348]]></url></Content><token name="RenderFidelity">1</token><Content name="TextureID"><url><![CDATA[http://www.roblox.com/asset/?id= 29097365]]></url></Content><int name="VertexCount">0</int><token name="CollisionFidelity">0</token><token name="FluidFidelityInternal">0</token><bool name="InertiaMigrated">true</bool><Vector3 name="UnscaledCofm"><X>-0.00022845211788080633</X><Y>0.10668452829122543</Y><Z>-0.012850954197347164</Z></Vector3><Vector3 name="UnscaledVolInertiaDiags"><X>0.06666393578052521</X><Y>0.06257141381502151</Y><Z>0.013537080027163029</Z></Vector3><Vector3 name="UnscaledVolInertiaOffDiags"><X>0.000004963907485944219</X><Y>0.00005264404171612114</Y><Z>-0.004626245237886906</Z></Vector3><float name="UnscaledVolume">0.2699149250984192</float><CoordinateFrame name="CFrame"><X>93.92874908447266</X><Y>4.843828201293945</Y><Z>-8.773992538452148</Z><R00>0.044492244720458984</R00><R01>-0.015268533490598202</R01><R02>0.9988930225372314</R02><R10>0.009851118549704552</R10><R11>0.9998412132263184</R11><R12>0.014844224788248539</R12><R20>-0.9989610910415649</R20><R21>0.00917977374047041</R21><R22>0.0446355938911438</R22></CoordinateFrame><bool name="CanCollide">false</bool><Color3uint8 name="Color3uint8">4288914085</Color3uint8><PhysicalProperties name="CustomPhysicalProperties"><CustomPhysics>true</CustomPhysics><Density>0</Density><Friction>0</Friction><Elasticity>0</Elasticity><FrictionWeight>0</FrictionWeight><ElasticityWeight>0</ElasticityWeight></PhysicalProperties><token name="Material">1568</token><string name="MaterialVariantSerialized"></string><float name="Reflectance">1</float><Vector3 name="RotVelocity"><X>-5.706563115381869e-07</X><Y>-1.2054431651269907e-14</Y><Z>-0.000002171036840081797</Z></Vector3><Vector3 name="Velocity"><X>0.0000018315588476980338</X><Y>-0.000004546345735434443</Y><Z>-4.814245926354488e-07</Z></Vector3><Vector3 name="size"><X>1</X><Y>1.2000000476837158</Y><Z>2</Z></Vector3><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[Handle]]></string><BinaryString name="Tags"></BinaryString></Properties><Item class="ParticleEmitter" referent="24"><Properties><ColorSequence name="Color">0 0.3333333432674408 0 0.49803924560546875 0 1 0.3333333432674408 0 0.49803924560546875 0 </ColorSequence><NumberRange name="Lifetime">0.4000000059604645 0.699999988079071</NumberRange><float name="LightEmission">1</float><float name="Rate">INF</float><NumberSequence name="Size">0 0.20000000298023224 0 1 0.20000000298023224 0 </NumberSequence><NumberRange name="Speed">0 0</NumberRange><Content name="Texture"><url><![CDATA[rbxasset://textures/particles/explosion01_implosion_main.dds]]></url></Content><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="ParticleEmitter" referent="25"><Properties><ColorSequence name="Color">0 0.3333333432674408 0 0.49803924560546875 0 1 0.3333333432674408 0 0.49803924560546875 0 </ColorSequence><NumberRange name="Lifetime">0.10000000149011612 0.20000000298023224</NumberRange><float name="LightEmission">1</float><float name="Rate">50</float><NumberSequence name="Size">0 0.3125 0 1 0.7499998807907104 0.1249992847442627 </NumberSequence><NumberRange name="Speed">0 0</NumberRange><Vector2 name="SpreadAngle"><X>100000000</X><Y>100000000</Y></Vector2><Content name="Texture"><url><![CDATA[http://www.roblox.com/asset/?id=178024735]]></url></Content><float name="ZOffset">0.10000000149011612</float><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[effect]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="ParticleEmitter" referent="26"><Properties><ColorSequence name="Color">0 0.3333333432674408 0 0.49803924560546875 0 1 0.3333333432674408 0 0.49803924560546875 0 </ColorSequence><NumberRange name="Lifetime">0.20000000298023224 0.20000000298023224</NumberRange><float name="LightEmission">1</float><float name="Rate">40</float><NumberRange name="RotSpeed">-200 -200</NumberRange><NumberRange name="Rotation">-100 -100</NumberRange><NumberSequence name="Size">0 0 0 1 0.5000001192092896 0.06249964237213135 </NumberSequence><NumberRange name="Speed">0 0</NumberRange><Vector2 name="SpreadAngle"><X>100000000</X><Y>100000000</Y></Vector2><Content name="Texture"><url><![CDATA[http://www.roblox.com/asset/?id=178024735]]></url></Content><float name="ZOffset">0.20000000298023224</float><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[effect]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="ParticleEmitter" referent="27"><Properties><ColorSequence name="Color">0 0.3333333432674408 0 0.49803924560546875 0 1 0.3333333432674408 0 0.49803924560546875 0 </ColorSequence><NumberRange name="Lifetime">0.20000000298023224 0.20000000298023224</NumberRange><float name="LightEmission">1</float><float name="Rate">40</float><NumberRange name="RotSpeed">200 200</NumberRange><NumberRange name="Rotation">100 100</NumberRange><NumberSequence name="Size">0 0 0 1 0.5000001192092896 0.37499964237213135 </NumberSequence><NumberRange name="Speed">0 0</NumberRange><Vector2 name="SpreadAngle"><X>1000000000</X><Y>1000000000</Y></Vector2><Content name="Texture"><url><![CDATA[http://www.roblox.com/asset/?id=178024735]]></url></Content><float name="ZOffset">0.20000000298023224</float><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[effect]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="ParticleEmitter" referent="28"><Properties><ColorSequence name="Color">0 0.3333333432674408 0 0.49803924560546875 0 1 0.3333333432674408 0 0.49803924560546875 0 </ColorSequence><NumberRange name="Lifetime">0.07000000029802322 0.10000000149011612</NumberRange><float name="LightEmission">0.5</float><float name="Rate">200</float><NumberSequence name="Size">0 0.3125 0.2499997615814209 1 0.43749988079071045 0.43749988079071045 </NumberSequence><NumberRange name="Speed">0 0</NumberRange><Content name="Texture"><url><![CDATA[http://www.roblox.com/asset/?id=242941041]]></url></Content><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[other effect]]></string><BinaryString name="Tags"></BinaryString></Properties></Item><Item class="ParticleEmitter" referent="29"><Properties><ColorSequence name="Color">0 0.3333333432674408 0 0.49803924560546875 0 1 0.3333333432674408 0 0.49803924560546875 0 </ColorSequence><NumberRange name="Lifetime">0.10000000149011612 0.20000000298023224</NumberRange><float name="LightEmission">1</float><float name="Rate">200</float><NumberSequence name="Size">0 0.4000000059604645 0 1 0.4000000059604645 0 </NumberSequence><NumberRange name="Speed">0 0</NumberRange><Content name="Texture"><url><![CDATA[http://www.roblox.com/asset/?id=234368773]]></url></Content><NumberSequence name="Transparency">0 0.5 0 1 0.5 0 </NumberSequence><BinaryString name="AttributesSerialize"></BinaryString><bool name="DefinesCapabilities">false</bool><string name="Name"><![CDATA[other effect 2]]></string><BinaryString name="Tags"></BinaryString></Properties></Item></Item></Item><Item class="Script" referent="30"><Properties><string name="Name"><![CDATA[README]]></string><ProtectedString name="Source"><![CDATA[--[[
+		Thank you for using UniversalSynSaveInstance (Join to Copy Games) https://discord.gg/wx4ThpAsmw.
+
+		If you didn't save in Binary (rbxl) - it's recommended to save the game right away to take advantage of the binary format & to preserve values of certain properties if you used IgnoreDefaultProperties setting (as they might change in the future).
+		You can do that by going to FILE -> Save to File As -> Make sure File Name ends with .rbxl -> Save
+
+		ServerStorage, ServerScriptService and Server Scripts are IMPOSSIBLE to save because of FilteringEnabled.
+
+		If your player cannot spawn into the game, please move the scripts in StarterPlayer somewhere else. Then run `game:GetService("Players").CharacterAutoLoads = true`.
+		And use "Play Here" to start game instead of "Play" to spawn your Character where your Camera currently is.
+
+		If the chat system does not work, please use the explorer and delete everything inside the TextChatService/Chat service(s). 
+		Or run `game:GetService("Chat"):ClearAllChildren() game:GetService("TextChatService"):ClearAllChildren()`
+				
+		If Union and MeshPart collisions don't work, run the script below in the Studio Command Bar:
+				
+				
+		local C = game:GetService("CoreGui")
+		local D = Enum.CollisionFidelity.Default
+				
+		for _, v in game:GetDescendants() do
+			if v:IsA("TriangleMeshPart") and not v:IsDescendantOf(C) then
+				v.CollisionFidelity = D
+			end
+		end
+		print("Done")
+				
+		If you can't move the Camera, run this script in the Studio Command Bar:
+			
+		workspace.CurrentCamera.CameraType = Enum.CameraType.Fixed
+		
+		Or Destroy the Camera.
+
+		This file was generated with the following settings:
+		{"SaveBytecode":false,"Callback":false,"ShowStatus":true,"IgnoreDefaultPlayerScripts":true,"NilInstancesFixes":{"BaseWrap":null,"Animator":null,"Attachment":null,"PackageLink":null,"AdPortal":null},"IgnoreList":["CoreGui","CorePackages"],"__DEBUG_MODE":false,"DecompileJobless":false,"IgnoreNotArchivable":true,"RemovePlayerCharacters":false,"Object":null,"DecompileIgnore":["TextChatService",null,null],"IgnoreSpecialProperties":true,"TreatUnionsAsParts":false,"IsModel":false,"NilInstances":false,"ExtraInstances":[],"noscripts":false,"ReadMe":true,"scriptcache":true,"OptionsAliases":{"IgnoreArchivable":"IgnoreNotArchivable","DecompileTimeout":"timeout","SaveNonCreatable":"SaveNotCreatable","SavePlayers":"IsolatePlayers","FileName":"FilePath","IgnoreDefaultProps":"IgnoreDefaultProperties"},"AlternativeWritefile":true,"mode":"optimized","SaveCacheInterval":56320,"SharedStringOverwrite":false,"IsolatePlayers":false,"IgnoreSharedStrings":true,"timeout":10,"NotCreatableFixes":["","AnimationTrack","Player","PlayerGui","PlayerScripts","PlayerMouse","ScreenshotHud","StudioData","TextSource","TouchTransmitter"],"Anonymous":false,"IgnoreDefaultProperties":true,"IsolateStarterPlayer":false,"IgnorePropertiesOfNotScriptsOnScriptsMode":false,"IsolateLocalPlayerCharacter":false,"SaveNotCreatable":false,"IsolateLocalPlayer":false,"FilePath":"Place_99854160901345_Tool_man_1756049067.txt","AntiIdle":true,"ShutdownWhenDone":false,"SafeMode":false,"IgnoreProperties":[]}
+
+		Elapsed time: 1.0032356249867007 PlaceId: 99854160901345 PlaceVersion: 6 Client Version: 2.685.797 Executor: Delta 1.3.685.797 arm64
+]]]]></ProtectedString></Properties></Item></roblox><!-- Saved by UniversalSynSaveInstance (Join to Copy Games) https://discord.gg/wx4ThpAsmw -->
